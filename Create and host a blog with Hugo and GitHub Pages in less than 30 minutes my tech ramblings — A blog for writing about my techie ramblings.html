@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    
+      <title>Create and host a blog with Hugo and GitHub Pages in less 
+than 30 minutes :: my tech ramblings — A blog for writing about my 
+techie ramblings</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Do you want to start a blog and don&amp;rsquo;t want to lose a lot of time setting everything up?
+That was exactly my thought! I wanted to build a blog to write about my ramblings, but I didn&amp;rsquo;t want to spend long hours settings things up.
+After doing a little of research about what options are available nowadays I found that Hugo could be a good fit.
+What&amp;rsquo;s Hugo? Hugo is a static HTML and CSS website generator, it is written in Golang and it relies on markdown files and I like how few steps you need to do to have a site ready to rock.">
+<meta name="keywords" content="">
+<meta name="robots" content="noodp">
+<link rel="canonical" href="https://www.mytechramblings.com/posts/create-a-website-with-hugo-and-gh/">
+
+
+
+
+
+<link rel="stylesheet" href="Create%20and%20host%20a%20blog%20with%20Hugo%20and%20GitHub%20Pages%20in%20less%20than%2030%20minutes%20my%20tech%20ramblings%20%E2%80%94%20A%20blog%20for%20writing%20about%20my%20techie%20ramblings_files/style_002.css">
+
+
+<link rel="stylesheet" href="Create%20and%20host%20a%20blog%20with%20Hugo%20and%20GitHub%20Pages%20in%20less%20than%2030%20minutes%20my%20tech%20ramblings%20%E2%80%94%20A%20blog%20for%20writing%20about%20my%20techie%20ramblings_files/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.mytechramblings.com/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="https://www.mytechramblings.com/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Create and host a blog with Hugo and GitHub Pages in less than 30 minutes">
+<meta name="twitter:description" content="Do you want to start a blog and don’t want to lose a lot of time setting everything up?
+That was exactly my thought! I wanted to build a blog to write about my ramblings, but I didn’t want to spend long hours settings things up.
+After doing a little of research about what options are available nowadays I found that Hugo could be a good fit.
+What’s Hugo? Hugo is a static HTML and CSS website generator, it is written in Golang and it relies on markdown files and I like how few steps you need to do to have a site ready to rock.">
+
+
+
+<meta property="og:title" content="Create and host a blog with Hugo and GitHub Pages in less than 30 minutes">
+<meta property="og:description" content="Do you want to start a blog and don’t want to lose a lot of time setting everything up?
+That was exactly my thought! I wanted to build a blog to write about my ramblings, but I didn’t want to spend long hours settings things up.
+After doing a little of research about what options are available nowadays I found that Hugo could be a good fit.
+What’s Hugo? Hugo is a static HTML and CSS website generator, it is written in Golang and it relies on markdown files and I like how few steps you need to do to have a site ready to rock.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.mytechramblings.com/posts/create-a-website-with-hugo-and-gh/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2020-06-21T18:28:38+02:00">
+<meta property="article:modified_time" content="2020-06-21T18:28:38+02:00"><meta property="og:site_name" content="my tech ramblings">
+
+
+
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://www.mytechramblings.com/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"></path>
+</svg>
+</span>
+    <span class="logo__text">my tech ramblings</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="https://www.mytechramblings.com/about">About</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="https://www.mytechramblings.com/about">About</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"></path>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h1 class="post-title"><a href="https://www.mytechramblings.com/posts/create-a-website-with-hugo-and-gh/">Create and host a blog with Hugo and GitHub Pages in less than 30 minutes</a></h1>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2020-06-21
+        </span>
+
+        
+          
+            
+
+
+
+          
+        
+      
+
+      
+      
+        <span class="post-read-time">— 5 min read</span>
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://www.mytechramblings.com/tags/hugo/">hugo</a>&nbsp;
+        
+          #<a href="https://www.mytechramblings.com/tags/github/">github</a>&nbsp;
+        
+          #<a href="https://www.mytechramblings.com/tags/actions/">actions</a>&nbsp;
+        
+          #<a href="https://www.mytechramblings.com/tags/go/">go</a>&nbsp;
+        
+      </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      <p>Do you want to start a blog and don’t want to lose a lot of time setting everything up?<br>
+That was exactly my thought! I wanted to build a blog to write about my 
+ramblings, but I didn’t want to spend long hours settings things up.<br>
+After doing a little of research about what options are available nowadays I found that Hugo could be a good fit.</p>
+<h1 id="whats-hugo">What’s Hugo?</h1>
+<p>Hugo is a static HTML and CSS website generator, it is written in 
+Golang and it relies on markdown files and I like how few steps you need
+ to do to have a site ready to rock.</p>
+<p>You just need to:</p>
+<ul>
+<li>Create a new static site using the Hugo CLI</li>
+<li>Choose a theme from his website: <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></li>
+<li>Do some minor tinkering on how the theme is going to work in your website</li>
+<li>Choose a hosting provider</li>
+<li>Publish the content</li>
+</ul>
+<p>And that’s it! You are ready to go!</p>
+<p>There are a lot of options for hosting a static website, but I chose 
+GitHub Pages because it is free, easy to work with and I already have an
+ existing account.</p>
+<h1 id="steps">Steps</h1>
+<p>After reading a little bit about how to set everything up I begin building my site.</p>
+<h2 id="install-hugo">Install Hugo</h2>
+<p>I work mainly with Windows so I use <em>Chocolatey</em>.</p>
+<blockquote>
+<p>Chocolatey it’s just a package manager for Windows if you are interested in learning more about check it out its website:  <a href="https://chocolatey.org/">https://chocolatey.org/</a></p>
+</blockquote>
+<p>You can install Hugo with the following one-liner:</p>
+<div class="highlight"><div class="code-toolbar"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4" class=" language-bash"><code class=" language-bash" data-lang="bash">choco <span class="token function">install</span> hugo -confirm
+</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div></div><p>If you use another OS just check out the official docs about how to install it:<br>
+<a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/</a></p>
+<p>After you install Hugo, you can use it via the command line, just type <em>hugo -help</em> to list all the options available.</p>
+<h2 id="create-a-new-site">Create a new site</h2>
+<p>We are going to create a new Hugo site in a folder named <strong>dotnetramblings</strong>.</p>
+<div class="highlight"><div class="code-toolbar"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4" class=" language-bash"><code class=" language-bash" data-lang="bash">hugo new site dotnetramblings
+</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div></div><h2 id="add-a-theme">Add a theme</h2>
+<p>Next step is to style our site.<br>
+We choose an existing theme from the website: <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a> <br>
+I pick the <strong>hello-friend</strong> theme and add it into the project as a submodule. You have to place the submodule in the themes folder.</p>
+<div class="highlight"><div class="code-toolbar"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4" class=" language-bash"><code class=" language-bash" data-lang="bash"><span class="token function">cd</span> dotnetramblings
+<span class="token function">git</span> submodule add https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
+</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div></div><p>You can see how your website currently looks by typing:</p>
+<div class="highlight"><div class="code-toolbar"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4" class=" language-bash"><code class=" language-bash" data-lang="bash">hugo server -D
+</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div></div><h2 id="create-a-github-repository-and-modify-the-configtoml-file">Create a GitHub repository and modify the config.toml file</h2>
+<p>Go to GitHub and create a new repository.<br>
+In my case I’m going to create the repository <strong>dotnetramblings</strong>.</p>
+<p>Once the repository is created you <strong>HAVE</strong> to modify 
+the config.toml file found on the root directory of your site. You need 
+to modify the baseUrl property to point to your GitHub Page.</p>
+<div class="highlight"><div class="code-toolbar"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4" class=" language-toml"><code class=" language-toml" data-lang="toml"><span class="token key property">baseurl</span> <span class="token punctuation">=</span> <span class="token string">"https://myuser.github.io/dotnetramblings/"</span>
+</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div></div><h2 id="build-your-site">Build your site</h2>
+<p>If you want you can tweak the theme options until you’re satisfied with it, after that the next step is to build the site.<br>
+We execute:</p>
+<div class="highlight"><div class="code-toolbar"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4" class=" language-bash"><code class=" language-bash" data-lang="bash">hugo
+</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div></div><p>The output of the build will be put in the <strong>./public/</strong> directory. The public directory is what we are going to publish into GitHub.</p>
+<h2 id="push-your-code-into-github">Push your code into GitHub</h2>
+<p>It’s time to upload the contents of the <strong>./public</strong> directory into the GitHub repository.</p>
+<div class="highlight"><div class="code-toolbar"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4" class=" language-bash"><code class=" language-bash" data-lang="bash"><span class="token function">cd</span> dotnetramblings/public
+<span class="token function">git</span> init
+<span class="token function">git</span> remote add origin https://github.com/myuser/dotnetramblings.git
+<span class="token function">git</span> add <span class="token keyword">.</span>
+<span class="token function">git</span> commit -m <span class="token string">"Initial commit"</span>
+<span class="token function">git</span> push --set-upstream origin master
+</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div></div><p>After pushing the code into GitHub you still need to modify the Repository settings.<br>
+Change the setting found in: <strong>Settings &gt; Options &gt; GitHub pages &gt; Source</strong>  to <strong>“master branch”</strong></p>
+<h2 id="test-your-webpage">Test your webpage</h2>
+<p>Just wait a couple of minutes for the page to refresh and browse to: <a href="https://myuser.github.io/dotnetramblings">https://myuser.github.io/dotnetramblings</a> and you will see your website up and running.</p>
+<h2 id="automate-everything">Automate everything!</h2>
+<p>The site is up and running and everything works great but be aware that right now the source code is only on your local machine.</p>
+<p>So our final steps are going to be:</p>
+<ul>
+<li>Create a second github repository: <strong>dotnetramblings_source</strong>
+<ul>
+<li>The second repository is going to host the source code so every time
+ we want to add a new post we will push the changes into that 
+repository.</li>
+</ul>
+</li>
+<li>After we push the changes a github action will grab the content from <strong>dotnetramblings_source</strong>, build it and publish the output into the <strong>dotnetramblings</strong> repository.</li>
+</ul>
+<p>First of all I’m creating a .gitignore file because I don’t want to push the <strong>./public</strong> folder into GitHub. Remember that the <strong>public</strong> folder contains the output of the Hugo build.<br>
+After that I push everything into the <strong>dotnetrambligs_source</strong> repository.</p>
+<div class="highlight"><div class="code-toolbar"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4" class=" language-bash"><code class=" language-bash" data-lang="bash"><span class="token function">cd</span> dotnetramblings
+<span class="token keyword">echo</span> <span class="token string">"public/"</span> <span class="token operator">&gt;&gt;</span> .gitignore
+<span class="token function">git</span> init
+<span class="token function">git</span> remote add origin https://github.com/myuser/dotnetramblings_source.git
+<span class="token function">git</span> add <span class="token keyword">.</span>
+<span class="token function">git</span> commit -m <span class="token string">"Add site files"</span>
+<span class="token function">git</span> push --set-upstream origin master
+
+</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div></div><p>The last step is to build a GitHub Action.<br>
+The GitHub Action is going to grab the content from the <strong>dotnetramblings_source</strong> repository, build it using Hugo and push the output into the <strong>dotnetramblings</strong> repository.</p>
+<div class="highlight"><div class="code-toolbar"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4" class=" language-yaml"><code class=" language-yaml" data-lang="yaml">
+<span class="token key atrule">name</span><span class="token punctuation">:</span> hugo CI
+
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token key atrule">push</span><span class="token punctuation">:</span>
+    <span class="token key atrule">branches</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> master <span class="token punctuation">]</span>
+
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">build</span><span class="token punctuation">:</span>
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">submodules</span><span class="token punctuation">:</span> <span class="token boolean important">true </span>
+          <span class="token key atrule">fetch-depth</span><span class="token punctuation">:</span> <span class="token number">1   </span>
+
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Hugo
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>hugo@v2
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">hugo-version</span><span class="token punctuation">:</span> <span class="token string">'latest'</span>
+
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Build
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> hugo
+
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">personal_token</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.PERSONAL_TOKEN <span class="token punctuation">}</span><span class="token punctuation">}</span>
+          <span class="token key atrule">external_repository</span><span class="token punctuation">:</span> myuser/dotnetramblings
+          <span class="token key atrule">publish_branch</span><span class="token punctuation">:</span> master
+          <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./public
+
+</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div></div><p>And we are good to go! With less than 30 minutes we have achieved:</p>
+<ul>
+<li>A running static website hosted with GitHub Pages on our main repository.</li>
+<li>A secondary repository where we put all the site source code and a 
+pipeline to compile and deploy the site source code into the main 
+repository in an automatic way.</li>
+</ul>
+
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">Read other posts</span>
+            <hr>
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://www.mytechramblings.com/posts/enforce-your-dotnet-apps-framework-version-using-roslyn-analyzers/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">Enforce the use of a specific .NET Core version using Roslyn</span>
+                </a>
+              </span>
+            
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+        
+
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2021 Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme created by <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script async="" src="Create%20and%20host%20a%20blog%20with%20Hugo%20and%20GitHub%20Pages%20in%20less%20than%2030%20minutes%20my%20tech%20ramblings%20%E2%80%94%20A%20blog%20for%20writing%20about%20my%20techie%20ramblings_files/analytics.js"></script><script src="Create%20and%20host%20a%20blog%20with%20Hugo%20and%20GitHub%20Pages%20in%20less%20than%2030%20minutes%20my%20tech%20ramblings%20%E2%80%94%20A%20blog%20for%20writing%20about%20my%20techie%20ramblings_files/main.js"></script>
+<script src="Create%20and%20host%20a%20blog%20with%20Hugo%20and%20GitHub%20Pages%20in%20less%20than%2030%20minutes%20my%20tech%20ramblings%20%E2%80%94%20A%20blog%20for%20writing%20about%20my%20techie%20ramblings_files/prism.js"></script>
+
+      
+    </div>
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-170300931-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    
+  
+
+</body></html>

@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+
+<h4>  Hello API this a new layout  </h4>
+<img src="{{.Params.Image | absURL }}" alt="{{site.Params.author}}" class="img-fluid w-100 mb-4">
+
+
+
+
+{{ .Content }}
+<!------- <button onclick = "myFunction()" id="youtube"> API Element </button> --->
+<button onclick = "myFunction()" id="youtube"> API Element </button>
+
+
+
+
+
+
+
+
+
+
+<div  class="container-fluid" > 
+<div class= "row"  >
+<div class="col-md-3"> </div>
+<div class="col-md-6">
+    <iframe  class="container-fluid" id="ghjk0" height="300" src=""   allowFullScreen >
+</iframe> <br>
+<iframe  class="container-fluid" id="ghjk1" height="300" src=""   allowFullScreen >
+</iframe> <br>
+
+<iframe  class="container-fluid" id="ghjk2" height="300" src=""   allowFullScreen >
+</iframe> <br>
+<iframe  class="container-fluid" id="ghjk3" height="300" src=""   allowFullScreen >
+</iframe> <br>
+<iframe  class="container-fluid" id="ghjk4" height="300" src=""   allowFullScreen >
+</iframe> <br>
+<iframe  class="container-fluid" id="ghjk5" height="300" src=""   allowFullScreen >
+</iframe> <br>
+
+<iframe  class="container-fluid" id="ghjk6" height="300" src=""   allowFullScreen >
+</iframe> <br>
+
+<iframe  class="container-fluid" id="ghjk7" height="300" src=""   allowFullScreen >
+</iframe> <br>
+
+<iframe  class="container-fluid" id="ghjk8" height="300" src=""   allowFullScreen >
+</iframe> <br>
+
+<iframe  class="container-fluid" id="ghjk9" height="300" src=""   allowFullScreen >
+</iframe> <br>
+
+
+</div>
+
+
+<div class="col-md-3"> </div>
+</div>
+</div> 
+{{ end }}
+

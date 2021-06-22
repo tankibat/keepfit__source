@@ -1,0 +1,63 @@
+
+
+var jQueryScript = document.createElement('script');  
+jQueryScript.setAttribute('src',' https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js');
+document.head.appendChild(jQueryScript);
+
+const API='AIzaSyCrabFFe6a48icSTxTv9zUTRCxB2qyzElw' 
+const channelId = 'UCkgY5iy0Y4SqQustDKlee7g' 
+const result = 10;
+var AURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelId}&part=snippet,id&order=date&maxResults=${result}` ;
+var strx=``;
+var eos ="";
+//const Afuction = ()=> {  alert("Hello Hogo");};
+
+
+
+//document.getElementById("youtube").addEventListener("click", myFunction);
+
+document.getElementById("youtube").onclick = function() {myFunction()};
+function myFunction() {
+  alert("I am an alert box!");
+
+  axios.get(AURL)
+  .then(function (response) {
+    //var rjson = JSON.parse(response); 
+     eos =  response.data.items.map( (obj,i)=>   "https://www.youtube.com/embed/" +obj.id.videoId  )  ;    
+    //const  eos =   response.items.map((response,i)=>"https://www.youtube.com/embed/" +response.id.videoId);
+
+       var i;
+for (i = 0; i < eos.length; i++) {
+   console.log("ghjk" + i);
+
+   document.getElementById("ghjk" + i ).src= eos[i]  ;
+
+} 
+
+ 
+ // console.log(data.itmes[0]);
+
+  })
+
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+  .then(function () {
+    // always executed
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

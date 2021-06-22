@@ -1,0 +1,78 @@
+
+
+{{ define "main" }}
+
+{{ $main := resources.Get "scss/main.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+<link rel="stylesheet" href="{{ $main.Permalink }}">
+
+
+<h4>  Hello API this a new layout  </h4>
+<img src="{{.Params.Image | absURL }}" alt="{{site.Params.author}}" class="img-fluid w-100 mb-4">
+
+
+
+
+{{ .Content }}
+<!------- <button onclick = "myFunction()" id="youtube"> API Element </button> --->
+  <!-------  <button onclick = "myFunction()" id=""> API Element </button>  ----->
+
+<div class="app-container " > 
+    
+    
+   
+   
+  
+    {{ range $i, $sequence :=  (seq 10) }}
+   <div class="videos__item  ">
+
+<div  class= "video__image">
+
+
+<a  target="_blank"    id="myAnchor{{$i}}" href=""> <img  id ="myImg{{$i}}"  src="" /> </a>
+   
+
+
+</div>
+   <div class="video__footer" >   
+
+    <h6 id ="tiTle{{$i}}" > </h6>
+
+  </div>
+
+ </div>
+
+
+{{ end }}
+    
+
+
+
+    
+
+   
+    
+   
+        </div>
+    </div>
+     
+    
+
+
+
+
+
+
+   
+
+
+{{ end }}
+
+
+
+
+
+
+
+
+
+
