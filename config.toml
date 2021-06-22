@@ -1,5 +1,5 @@
 # default config
-baseurl = "https://tankibat.github.io/stayingfit/"
+baseurl = "https://tankibat.github.io/keepfit/"
 
 languageCode = "en-us"
 title = "Parsa Hugo | Personal Blog Template"
